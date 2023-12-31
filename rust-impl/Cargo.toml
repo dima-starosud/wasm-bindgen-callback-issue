@@ -1,0 +1,10 @@
+[package]
+name = "rust-impl"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wasm-bindgen = { version = "0.2.89", features = ["serde-serialize"] }
+
+[lib]
+crate-type = ["cdylib", "rlib"]

@@ -1,0 +1,12 @@
+{
+  "name": "ts-usage",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.10.6",
+    "rust-impl": "../rust-impl/pkg",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
