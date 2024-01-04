@@ -3,7 +3,7 @@
 set -ex
 
 pushd rust-impl
-wasm-pack build --target nodejs
+wasm-pack build --target bundler
 popd
 
 pushd ts-usage
