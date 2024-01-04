@@ -2,3 +2,4 @@
 /rust-impl/pkg
 
 /ts-usage/node_modules
+/ts-usage/dist

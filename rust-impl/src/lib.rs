@@ -1,8 +1,15 @@
 use wasm_bindgen::prelude::*;
 
+#[wasm_bindgen(typescript_custom_section)]
+const X_PEND_CONTENT: &'static str = r#"
+export interface TsCallback {
+    call(arg: string): number;
+}
+"#;
+
 #[wasm_bindgen]
 extern "C" {
-    #[wasm_bindgen(typescript_type = "(arg: string) => number")]
+    #[wasm_bindgen(typescript_type = "TsCallback")]
     #[derive(Debug)]
     pub type TsCallback;
 
