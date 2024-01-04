@@ -8,5 +8,6 @@ popd
 
 pushd ts-usage
 yarn add ../rust-impl/pkg
-yarn ts-node src/index.ts
+npx tsc --outDir dist
+node dist/index.js
 popd
